@@ -2,7 +2,7 @@
 
 My name is Vasiliy
 
- I’m currently working in research institute, I'm senior molecular biologist in Research and Development (R&D) group.
+ I’m currently working in research institute in Moscow, I'm senior molecular biologist in Research and Development (R&D) group.
  I’m currently learning data engineering course for new opportunities in my present and future workes.
 
 <!--
