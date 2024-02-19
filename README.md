@@ -3,7 +3,7 @@
 My name is Vasiliy
 
  I’m currently working in research institute in Moscow, I'm senior molecular biologist in Research and Development (R&D) group.
- I’m currently learning data engineering course for new opportunities in my present and future workes. It's edits version.
+ I’m currently learning data engineering for new opportunities in my present and future workes.
 
 <!--
 **b5401/b5401** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
