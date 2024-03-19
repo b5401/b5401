@@ -1,0 +1,726 @@
+{
+  "canvas": {
+    "version": "2.2.13",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -16,
+    "scrollLeft": -10,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": false,
+      "columnComment": false,
+      "columnDataType": true,
+      "columnDefault": false,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": false,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "gene_db",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "id": "c6bd5ea3-dce3-4c7a-a1c3-6cfd45458a92",
+        "name": "bac_strains",
+        "comment": "",
+        "columns": [
+          {
+            "id": "e34dc8a0-8494-419e-93ff-bfac6c2e510f",
+            "name": "bac_strain_id",
+            "comment": "",
+            "dataType": "serial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 79.3271484375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "96f33dda-e904-42a2-8a71-67b951b2900c",
+            "name": "bac_strain_name",
+            "comment": "",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 101.72802734375,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "569b710e-d664-4f19-8a9b-c68c6c9d6969",
+            "name": "plasmid_id",
+            "comment": "",
+            "dataType": "serial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 64.1435546875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "9fb89389-907b-4032-9f21-bd6843d12190",
+            "name": "strain_store",
+            "comment": "",
+            "dataType": "VARCHAR(10)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.919921875,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 50,
+          "top": 50,
+          "zIndex": 32,
+          "widthName": 68.47900390625,
+          "widthComment": 60
+        },
+        "visible": true
+      },
+      {
+        "id": "91a48394-5222-4094-847c-1f36b6fff4b7",
+        "name": "gene",
+        "comment": "",
+        "columns": [
+          {
+            "id": "4a1c1282-4fb7-41ad-a80a-b69260180768",
+            "name": "gene_id",
+            "comment": "",
+            "dataType": "serial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "aec57e8c-f090-4d4f-811d-6e7af7fcda30",
+            "name": "gene_name",
+            "comment": "",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.6689453125,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "e19c8cdb-9244-4f25-83be-72d8b7e8c5dc",
+            "name": "gene_dna_seq",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 88.02978515625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "4873311a-47ec-4729-98e6-c44064cdd708",
+            "name": "gene_aa_seq",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 80.7998046875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 491,
+          "top": 225,
+          "zIndex": 44,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true
+      },
+      {
+        "id": "d33ea893-b2f2-493a-8426-c027bed4227b",
+        "name": "primers",
+        "comment": "",
+        "columns": [
+          {
+            "id": "95126108-6c55-4366-91de-ae50272097ee",
+            "name": "primer_id",
+            "comment": "",
+            "dataType": "serial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "4b1b5f27-b121-4d33-bd5f-b30b3207bc11",
+            "name": "primer_name",
+            "comment": "",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 78.58447265625,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "bc3884d4-6608-43b7-92f9-e3c724e98738",
+            "name": "primer_seq",
+            "comment": "",
+            "dataType": "VARCHAR(150)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.025390625,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "b5fea7b1-6e50-43af-8f96-6d06b0bbe96b",
+            "name": "primer_comp",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.8544921875,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "2320de4a-ddf7-439f-ba18-6d4f6c225284",
+            "name": "primer_adapter",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 90.15625,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "081e504f-478f-48b5-8646-2da89fbd3c25",
+            "name": "primer_store",
+            "comment": "",
+            "dataType": "VARCHAR(10)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.96630859375,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 498,
+          "top": 409,
+          "zIndex": 41,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true
+      },
+      {
+        "id": "407edeab-51f4-4423-9f39-6d2e5cac5a50",
+        "name": "plasmids",
+        "comment": "",
+        "columns": [
+          {
+            "id": "d21458c4-b969-4c2e-a948-ec9c8a09d252",
+            "name": "plasmid_id",
+            "comment": "",
+            "dataType": "serial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.1435546875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "eda6b2c3-4118-4837-9977-e7d1eafeeb67",
+            "name": "plasmid_name",
+            "comment": "",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 86.54443359375,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "02027073-ac22-4765-acd8-d749da3cfc67",
+            "name": "plasmid_sequence",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 110.4052734375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c1b9de4d-5384-4886-81cd-155bf3b596a8",
+            "name": "antibiotic_resistance",
+            "comment": "",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 119.787109375,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "262a35a2-9ffb-486a-8afd-c0f8af4e9a82",
+            "name": "bacterial_ori",
+            "comment": "",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.814453125,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "518fef96-7f05-4a03-86aa-37467ae31c90",
+            "name": "promoter",
+            "comment": "",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "dbbf73c9-3a40-4c78-9023-a35e74fafd48",
+            "name": "plasmid_store",
+            "comment": "",
+            "dataType": "VARCHAR(10)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 82.92626953125,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "61eab049-0bdf-49b7-83a0-4819a89612f8",
+            "name": "gene_id",
+            "comment": "",
+            "dataType": "serial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "aae0c800-3266-409b-ae2b-4553a61f937a",
+            "name": "primer_id",
+            "comment": "",
+            "dataType": "serial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 48,
+          "top": 331.5,
+          "zIndex": 39,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "id": "0e8d738f-a81e-4129-9aa1-1a5ed1e75aab",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "91a48394-5222-4094-847c-1f36b6fff4b7",
+          "columnIds": [
+            "4a1c1282-4fb7-41ad-a80a-b69260180768"
+          ],
+          "x": 491,
+          "y": 300.5,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "407edeab-51f4-4423-9f39-6d2e5cac5a50",
+          "columnIds": [
+            "61eab049-0bdf-49b7-83a0-4819a89612f8"
+          ],
+          "x": 313.505859375,
+          "y": 394.875,
+          "direction": "right"
+        },
+        "constraintName": "fk_gene_to_plasmids",
+        "visible": true
+      },
+      {
+        "id": "6202dd56-f17e-4317-b22b-0abfad965dc7",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "d33ea893-b2f2-493a-8426-c027bed4227b",
+          "columnIds": [
+            "95126108-6c55-4366-91de-ae50272097ee"
+          ],
+          "x": 498,
+          "y": 505,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "407edeab-51f4-4423-9f39-6d2e5cac5a50",
+          "columnIds": [
+            "aae0c800-3266-409b-ae2b-4553a61f937a"
+          ],
+          "x": 313.505859375,
+          "y": 521.625,
+          "direction": "right"
+        },
+        "constraintName": "fk_primers_to_plasmids",
+        "visible": true
+      },
+      {
+        "id": "37ce99ee-4c58-4d77-8536-b23bb9839eed",
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "407edeab-51f4-4423-9f39-6d2e5cac5a50",
+          "columnIds": [
+            "d21458c4-b969-4c2e-a948-ec9c8a09d252"
+          ],
+          "x": 180.7529296875,
+          "y": 331.5,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "c6bd5ea3-dce3-4c7a-a1c3-6cfd45458a92",
+          "columnIds": [
+            "569b710e-d664-4f19-8a9b-c68c6c9d6969"
+          ],
+          "x": 173.723388671875,
+          "y": 201,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_plasmids_to_bac_strains",
+        "visible": true
+      }
+    ]
+  }
+}
